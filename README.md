@@ -1,0 +1,2 @@
+# Spring Batch - Usando JDBC
+En este proyecto se realiza la carga de datos desde un fichero CSV, guardando los registros en una Base de Datos MySql usando JDBC, con el cual se escribe una query, para insertar los registros. El proyecto se configuro para que los registros se guarden en bloques de 200, ademas se configuro un TaskExecutor, que permite agregar hilos para el procesamiento de los datos.
