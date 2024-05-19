@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: SpringBatch_JDBC
+#Configuracion de Batch
+  batch:
+    job:
+      enabled: true
+    jdbc:
+      initialize-schema: always
+#Configuracion de la BD     
+  datasource:
+    url: jdbc:mysql://{host}:3306/{databse}
+    username: user
+    password: password
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create
+  sql:
+    init:
+      platform: mysql
+
+#Ubicacion del archivo - src/main/resource (No agregar)
+batch:
+  data:
+    size: 200
+  files:
+    persons: files/persons.csv
